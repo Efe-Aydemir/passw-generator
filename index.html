@@ -8,6 +8,11 @@
     <link href="https://unpkg.com/pattern.css" rel="stylesheet">
     <title>PASSWORD</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./simple.js"></script>
+<link rel="stylesheet" href="simple.css">
 </head>
 <body>
     <div class="pattern-dots-sm slategray h-5">-</div>
@@ -31,6 +36,7 @@
               </button>
         </div>
     </div>
+    <div id="myAlert"></div>
 
     <div id="me" class="text-center mt-4">
         <h1 class="display-6">By</h1>
@@ -38,6 +44,16 @@
         <h1 class="display-6">MonJoR</h1>
     </div>
     <script src="index.js"></script>
+    <script>
+        $("#copy").click(function() {
+            $("#myAlert").simpleAlert({
+                title : 'To inform',
+                message : 'Copy to Clipboard'
+            })
+        })
+
+
+    </script>
 </body>
 </html>
 
