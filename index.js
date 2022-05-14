@@ -29,3 +29,6 @@ generateBtn.addEventListener('click', () => {
     result.innerHTML = passwa
 })
 
+copyBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(result.innerHTML)
+})
